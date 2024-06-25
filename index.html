@@ -3,36 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plant Recommendation Quiz</title>
+    <title>Triangular Button Example</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Existing styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .question {
+            margin-bottom: 20px;
+        }
+
+        button,
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover,
+        .button:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Plant Recommendation Quiz</h1>
-        <form id="quizForm">
-            <div class="question">
-                <p>1. How much sunlight does your living space receive?</p>
-                <label>
-                    <input type="radio" name="q1" value="direct"> Lots of direct sunlight
-                </label><br>
-                <label>
-                    <input type="radio" name="q1" value="indirect"> Some indirect sunlight
-                </label><br>
-                <label>
-                    <input type="radio" name="q1" value="shaded"> Mostly shaded
-                </label>
-            </div>
 
-            <!-- Repeat similar structure for other questions -->
-
-            <button type="submit">Get Recommendation</button>
-        </form>
-
-        <div id="result" class="result">
-            <!-- Result will be displayed here -->
+<div class="container">
+    <h1>Plant Recommendation Quiz</h1>
+    <form id="quizForm">
+        <div class="question">
+            <p>1. How much sunlight does your living space receive?</p>
+            <label>
+                <input type="radio" name="q1" value="direct"> Lots of direct sunlight
+            </label><br>
+            <label>
+                <input type="radio" name="q1" value="indirect"> Some indirect sunlight
+            </label><br>
+            <label>
+                <input type="radio" name="q1" value="shaded"> Mostly shaded
+            </label>
         </div>
-    </div>
 
-    <script src="script.js"></script>
+        <!-- Other questions -->
+
+        <button type="submit" class="button">Get Recommendation</button>
+    </form>
+
+    <div id="result" class="result">
+        <!-- Result will be displayed here -->
+    </div>
+</div>
+
 </body>
 </html>
