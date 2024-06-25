@@ -38,3 +38,36 @@ button {
 button:hover {
     background-color: #45a049;
 }
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+}
+
+.button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 100px 173px; /* Adjust size of triangle */
+    border-color: transparent transparent transparent rgba(0, 0, 0, 0.1); /* Adjust color */
+    transition: border-color 0.3s ease;
+}
+
+.button:hover::before {
+    border-color: transparent transparent transparent rgba(0, 0, 0, 0.3); /* Hover color */
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
