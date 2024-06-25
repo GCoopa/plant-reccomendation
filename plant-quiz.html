@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Recommendation Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Plant Recommendation Quiz</h1>
+        <form id="quizForm">
+            <div class="question">
+                <p>1. How much sunlight does your living space receive?</p>
+                <label>
+                    <input type="radio" name="q1" value="direct"> Lots of direct sunlight
+                </label><br>
+                <label>
+                    <input type="radio" name="q1" value="indirect"> Some indirect sunlight
+                </label><br>
+                <label>
+                    <input type="radio" name="q1" value="shaded"> Mostly shaded
+                </label>
+            </div>
+
+            <!-- Repeat similar structure for other questions -->
+
+            <button type="submit">Get Recommendation</button>
+        </form>
+
+        <div id="result" class="result">
+            <!-- Result will be displayed here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
